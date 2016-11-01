@@ -19840,13 +19840,18 @@
 	
 	MapObject.prototype = {
 	
-	  addMarker: function addMarker(lat, lng) {
+	  addMarker: function addMarker(lat, lng, note) {
+	    var info_window = new google.maps.InfoWindow({ content: note });
 	    var marker = new google.maps.Marker({
 	      position: { lat: lat, lng: lng },
 	      map: this.map,
-	      icon: '/images/tennis.png'
+	      icon: '/images/tennis.png',
+	      animation: google.maps.Animation.DROP });
+	    marker.addListener('click', function () {
+	      info_window.open(map, marker);
 	    });
 	  },
+	
 	  changeZoom: function changeZoom(num) {
 	    this.map.setZoom(num);
 	  },
@@ -19883,7 +19888,7 @@
 	        for (var _iterator = this.props.tournaments[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
 	          var tournament = _step.value;
 	
-	          mapObject.addMarker(parseInt(tournament.lat, 10), parseInt(tournament.lng, 10));
+	          mapObject.addMarker(parseInt(tournament.lat, 10), parseInt(tournament.lng, 10), tournament.location);
 	        }
 	      } catch (err) {
 	        _didIteratorError = true;

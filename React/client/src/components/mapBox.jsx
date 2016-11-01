@@ -9,7 +9,7 @@ var MapBox = React.createClass({
 
     if (this.props.tournaments){
     for (var tournament of this.props.tournaments){
-      mapObject.addMarker(parseInt(tournament.lat, 10), parseInt(tournament.lng, 10))};
+      mapObject.addMarker(parseInt(tournament.lat, 10), parseInt(tournament.lng, 10), tournament.location)};
     }
 
     return(
