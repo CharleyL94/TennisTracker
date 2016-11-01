@@ -1391,3 +1391,52 @@ Started GET "/api/tournaments" for ::1 at 2016-11-01 14:30:25 +0000
 Processing by TournamentsController#index as HTML
   [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
 Completed 200 OK in 17ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 15:04:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 15:04:39 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 15:07:08 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 15:07:15 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 15:15:13 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 15:19:57 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 15:20:20 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 15:21:17 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
