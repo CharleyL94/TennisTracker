@@ -19771,16 +19771,13 @@
 	    this.getPlayerData();
 	    this.getTournamentData();
 	  },
-	
+	  // NEED TO TRY AND REFACTOR THE TWO GET DATA METHODS AS THEY'RE VERY SIMILAR
 	  getPlayerData: function getPlayerData() {
 	    var request = new XMLHttpRequest();
 	    request.open("GET", this.props.url + "/players");
 	    request.onload = function () {
 	      var players = JSON.parse(request.responseText);
-	      console.log("players", request.responseText);
 	      this.setState({ players: players });
-	      console.log("player 1", this.state.players[0]);
-	      console.log("player 1 name", this.state.players[0].name);
 	    }.bind(this);
 	    request.send();
 	  },
@@ -19818,7 +19815,7 @@
 	        { onClick: this.getPlayers },
 	        'View Players'
 	      ),
-	      React.createElement(MapBox, { tournaments: this.state.tournaments })
+	      React.createElement(MapBox, { tournaments: this.state.tournaments, players: this.state.players })
 	    );
 	  }
 	  // mapObject={new MapObject(document.getElementById('map'))} 
@@ -19839,7 +19836,8 @@
 	    center: { lat: 51, lng: 2 },
 	    zoom: 2
 	  });
-	  this.markers = [];
+	  // use either this.markers or this.info-windows to be able to close a window on opening a new one.
+	  // this.markers = [];
 	};
 	
 	MapObject.prototype = {
@@ -19879,8 +19877,65 @@
 	  displayName: 'MapBox',
 	
 	
+	  // NEED TO REFACTOR THIS.
 	  makeInfoWindowContent: function makeInfoWindowContent(tournament) {
-	    var string = "<h4>Tournament: " + tournament.name + "</h4><h5> Location: " + tournament.location + " </h5><h5>2016 Winner: " + tournament.winner + " </h5><h5>2016 Runner-up: " + tournament.runnerup + "</h5>";
+	    var winner;
+	    var _iteratorNormalCompletion = true;
+	    var _didIteratorError = false;
+	    var _iteratorError = undefined;
+	
+	    try {
+	      for (var _iterator = this.props.players[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	        var player = _step.value;
+	
+	        if (player.id === tournament.winner) {
+	          winner = player.name;
+	        }
+	      }
+	    } catch (err) {
+	      _didIteratorError = true;
+	      _iteratorError = err;
+	    } finally {
+	      try {
+	        if (!_iteratorNormalCompletion && _iterator.return) {
+	          _iterator.return();
+	        }
+	      } finally {
+	        if (_didIteratorError) {
+	          throw _iteratorError;
+	        }
+	      }
+	    }
+	
+	    var runnerup;
+	    var _iteratorNormalCompletion2 = true;
+	    var _didIteratorError2 = false;
+	    var _iteratorError2 = undefined;
+	
+	    try {
+	      for (var _iterator2 = this.props.players[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+	        var player = _step2.value;
+	
+	        if (player.id === tournament.runnerup) {
+	          runnerup = player.name;
+	        }
+	      }
+	    } catch (err) {
+	      _didIteratorError2 = true;
+	      _iteratorError2 = err;
+	    } finally {
+	      try {
+	        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+	          _iterator2.return();
+	        }
+	      } finally {
+	        if (_didIteratorError2) {
+	          throw _iteratorError2;
+	        }
+	      }
+	    }
+	
+	    var string = "<h4>Tournament: " + tournament.name + "</h4><h5> Location: " + tournament.location + " </h5><h5>2016 Winner: " + winner + " </h5><h5>2016 Runner-up: " + runnerup + "</h5>";
 	    return string;
 	  },
 	
@@ -19889,28 +19944,28 @@
 	    console.log("props tournaments", this.props.tournaments);
 	
 	    if (this.props.tournaments) {
-	      var _iteratorNormalCompletion = true;
-	      var _didIteratorError = false;
-	      var _iteratorError = undefined;
+	      var _iteratorNormalCompletion3 = true;
+	      var _didIteratorError3 = false;
+	      var _iteratorError3 = undefined;
 	
 	      try {
-	        for (var _iterator = this.props.tournaments[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-	          var tournament = _step.value;
+	        for (var _iterator3 = this.props.tournaments[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+	          var tournament = _step3.value;
 	
 	          var content = this.makeInfoWindowContent(tournament);
 	          mapObject.addMarker(parseInt(tournament.lat, 10), parseInt(tournament.lng, 10), content);
 	        }
 	      } catch (err) {
-	        _didIteratorError = true;
-	        _iteratorError = err;
+	        _didIteratorError3 = true;
+	        _iteratorError3 = err;
 	      } finally {
 	        try {
-	          if (!_iteratorNormalCompletion && _iterator.return) {
-	            _iterator.return();
+	          if (!_iteratorNormalCompletion3 && _iterator3.return) {
+	            _iterator3.return();
 	          }
 	        } finally {
-	          if (_didIteratorError) {
-	            throw _iteratorError;
+	          if (_didIteratorError3) {
+	            throw _iteratorError3;
 	          }
 	        }
 	      }

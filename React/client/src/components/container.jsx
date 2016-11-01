@@ -12,16 +12,13 @@ var Container = React.createClass({
     this.getPlayerData();
     this.getTournamentData();
   },
-
+// NEED TO TRY AND REFACTOR THE TWO GET DATA METHODS AS THEY'RE VERY SIMILAR
   getPlayerData: function(){
     var request = new XMLHttpRequest();
     request.open("GET", this.props.url +"/players");
     request.onload = function(){
       var players = JSON.parse(request.responseText);
-      console.log("players", request.responseText)
       this.setState({players: players})
-      console.log("player 1", this.state.players[0])
-      console.log("player 1 name", this.state.players[0].name)
     }.bind(this);
     request.send();
   },  
@@ -48,7 +45,7 @@ var Container = React.createClass({
         <div>
           <h1>Ace Tennis Tracker</h1>
           <button onClick={this.getPlayers}>View Players</button>
-          <MapBox tournaments={this.state.tournaments}/>
+          <MapBox tournaments={this.state.tournaments} players={this.state.players}/>
         </div>
     )
 }

@@ -3,8 +3,21 @@ var MapObject = require('../models/map');
 
 var MapBox = React.createClass({
 
+// NEED TO REFACTOR THIS.
   makeInfoWindowContent: function(tournament){
-    var string = "<h4>Tournament: " + tournament.name + "</h4><h5> Location: " + tournament.location + " </h5><h5>2016 Winner: " + tournament.winner + " </h5><h5>2016 Runner-up: " + tournament.runnerup + "</h5>";
+    var winner;
+    for (var player of this.props.players){
+      if (player.id === tournament.winner){
+        winner = player.name;
+      }
+    }
+    var runnerup;
+    for (var player of this.props.players){
+      if (player.id === tournament.runnerup){
+        runnerup = player.name;
+      }
+    }
+    var string = "<h4>Tournament: " + tournament.name + "</h4><h5> Location: " + tournament.location + " </h5><h5>2016 Winner: " + winner + " </h5><h5>2016 Runner-up: " + runnerup + "</h5>";
     return string
   },
   
