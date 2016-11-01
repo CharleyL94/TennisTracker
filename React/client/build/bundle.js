@@ -49,6 +49,7 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
 	var Container = __webpack_require__(159);
+	var MapObject = __webpack_require__(160);
 	
 	window.onload = function () {
 	  ReactDOM.render(React.createElement(Container, { url: 'http://localhost:3001/api' }), document.getElementById('app'));
@@ -19752,23 +19753,26 @@
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	var React = __webpack_require__(1);
+	var MapObject = __webpack_require__(160);
+	var MapBox = __webpack_require__(161);
 	
 	var Container = React.createClass({
-	  displayName: "Container",
+	  displayName: 'Container',
 	
 	
 	  getInitialState: function getInitialState() {
-	    return { players: null };
+	    return { players: null, tournaments: null };
 	  },
 	
 	  componentDidMount: function componentDidMount() {
-	    this.getData();
+	    this.getPlayerData();
+	    this.getTournamentData();
 	  },
 	
-	  getData: function getData() {
+	  getPlayerData: function getPlayerData() {
 	    var request = new XMLHttpRequest();
 	    request.open("GET", this.props.url + "/players");
 	    request.onload = function () {
@@ -19781,28 +19785,129 @@
 	    request.send();
 	  },
 	
+	  getTournamentData: function getTournamentData() {
+	    var request = new XMLHttpRequest();
+	    request.open("GET", this.props.url + "/tournaments");
+	    request.onload = function () {
+	      var tournaments = JSON.parse(request.responseText);
+	      console.log("tournaments", request.responseText);
+	      this.setState({ tournaments: tournaments });
+	      console.log("tournament 1", this.state.tournaments[0]);
+	      console.log("tournament 1 location", this.state.tournaments[0].location);
+	    }.bind(this);
+	    request.send();
+	  },
+	
 	  render: function render() {
 	    if (!this.state.players) {
 	      return React.createElement(
-	        "h1",
+	        'h1',
 	        null,
-	        "Loading"
+	        'Loading'
 	      );
 	    }
 	    return React.createElement(
-	      "div",
+	      'div',
 	      null,
 	      React.createElement(
-	        "h1",
+	        'h1',
 	        null,
 	        this.state.players[0].name
-	      )
+	      ),
+	      React.createElement(MapBox, { tournaments: this.state.tournaments })
 	    );
 	  }
+	  // mapObject={new MapObject(document.getElementById('map'))} 
 	
 	});
 	
 	module.exports = Container;
+
+/***/ },
+/* 160 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	var MapObject = function MapObject(container) {
+	
+	  this.map = new google.maps.Map(container, {
+	    center: { lat: 51, lng: 2 },
+	    zoom: 5
+	  });
+	  this.markers = [];
+	};
+	
+	MapObject.prototype = {
+	
+	  addMarker: function addMarker(lat, lng) {
+	    var marker = new google.maps.Marker({
+	      position: { lat: lat, lng: lng },
+	      map: this.map
+	    });
+	  },
+	  changeZoom: function changeZoom(num) {
+	    this.map.setZoom(num);
+	  },
+	  centerMap: function centerMap(latlng) {
+	    this.map.setCenter(latlng);
+	  }
+	};
+	
+	module.exports = MapObject;
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var MapObject = __webpack_require__(160);
+	
+	var MapBox = React.createClass({
+	  displayName: 'MapBox',
+	
+	
+	  render: function render() {
+	    var mapObject = new MapObject(document.getElementById('map'));
+	    console.log("props tournaments", this.props.tournaments);
+	
+	    if (this.props.tournaments) {
+	      var _iteratorNormalCompletion = true;
+	      var _didIteratorError = false;
+	      var _iteratorError = undefined;
+	
+	      try {
+	        for (var _iterator = this.props.tournaments[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	          var tournament = _step.value;
+	
+	          mapObject.addMarker(parseInt(tournament.lat, 10), parseInt(tournament.lng, 10));
+	        }
+	      } catch (err) {
+	        _didIteratorError = true;
+	        _iteratorError = err;
+	      } finally {
+	        try {
+	          if (!_iteratorNormalCompletion && _iterator.return) {
+	            _iterator.return();
+	          }
+	        } finally {
+	          if (_didIteratorError) {
+	            throw _iteratorError;
+	          }
+	        }
+	      }
+	
+	      ;
+	    }
+	
+	    return React.createElement('div', null);
+	  }
+	
+	});
+	
+	module.exports = MapBox;
 
 /***/ }
 /******/ ]);
