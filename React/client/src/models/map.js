@@ -1,8 +1,9 @@
 var MapObject = function(container) {
 
+
   this.map = new google.maps.Map(container, {
     center: {lat: 51, lng: 2},
-    zoom: 5
+    zoom: 2
   });
   this.markers = [];
 }
@@ -17,8 +18,8 @@ MapObject.prototype = {
       icon: '/images/tennis.png',
       animation: google.maps.Animation.DROP})
     marker.addListener('click', function() {
-      info_window.open(map, marker);
-    });  
+       info_window.open(map, marker);
+      });  
   },
 
   changeZoom: function(num){

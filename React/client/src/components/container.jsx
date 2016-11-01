@@ -31,12 +31,13 @@ var Container = React.createClass({
     request.open("GET", this.props.url +"/tournaments");
     request.onload = function(){
       var tournaments = JSON.parse(request.responseText);
-      console.log("tournaments", request.responseText)
       this.setState({tournaments: tournaments})
-      console.log("tournament 1", this.state.tournaments[0])
-      console.log("tournament 1 location", this.state.tournaments[0].location)
     }.bind(this);
     request.send();
+  },
+
+  getPlayers: function(){
+
   },
 
   render: function(){
@@ -45,7 +46,8 @@ var Container = React.createClass({
     }
     return(
         <div>
-          <h1>{this.state.players[0].name}</h1>
+          <h1>Ace Tennis Tracker</h1>
+          <button onClick={this.getPlayers}>View Players</button>
           <MapBox tournaments={this.state.tournaments}/>
         </div>
     )

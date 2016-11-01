@@ -19790,13 +19790,12 @@
 	    request.open("GET", this.props.url + "/tournaments");
 	    request.onload = function () {
 	      var tournaments = JSON.parse(request.responseText);
-	      console.log("tournaments", request.responseText);
 	      this.setState({ tournaments: tournaments });
-	      console.log("tournament 1", this.state.tournaments[0]);
-	      console.log("tournament 1 location", this.state.tournaments[0].location);
 	    }.bind(this);
 	    request.send();
 	  },
+	
+	  getPlayers: function getPlayers() {},
 	
 	  render: function render() {
 	    if (!this.state.players) {
@@ -19812,7 +19811,12 @@
 	      React.createElement(
 	        'h1',
 	        null,
-	        this.state.players[0].name
+	        'Ace Tennis Tracker'
+	      ),
+	      React.createElement(
+	        'button',
+	        { onClick: this.getPlayers },
+	        'View Players'
 	      ),
 	      React.createElement(MapBox, { tournaments: this.state.tournaments })
 	    );
@@ -19833,7 +19837,7 @@
 	
 	  this.map = new google.maps.Map(container, {
 	    center: { lat: 51, lng: 2 },
-	    zoom: 5
+	    zoom: 2
 	  });
 	  this.markers = [];
 	};
@@ -19875,6 +19879,11 @@
 	  displayName: 'MapBox',
 	
 	
+	  makeInfoWindowContent: function makeInfoWindowContent(tournament) {
+	    var string = "<h4>Tournament: " + tournament.name + "</h4><h5> Location: " + tournament.location + " </h5><h5>2016 Winner: " + tournament.winner + " </h5><h5>2016 Runner-up: " + tournament.runnerup + "</h5>";
+	    return string;
+	  },
+	
 	  render: function render() {
 	    var mapObject = new MapObject(document.getElementById('map'));
 	    console.log("props tournaments", this.props.tournaments);
@@ -19888,7 +19897,8 @@
 	        for (var _iterator = this.props.tournaments[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
 	          var tournament = _step.value;
 	
-	          mapObject.addMarker(parseInt(tournament.lat, 10), parseInt(tournament.lng, 10), tournament.location);
+	          var content = this.makeInfoWindowContent(tournament);
+	          mapObject.addMarker(parseInt(tournament.lat, 10), parseInt(tournament.lng, 10), content);
 	        }
 	      } catch (err) {
 	        _didIteratorError = true;
