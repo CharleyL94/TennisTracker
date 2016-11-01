@@ -19827,7 +19827,7 @@
 /* 160 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	var MapObject = function MapObject(container) {
 	
@@ -19843,7 +19843,8 @@
 	  addMarker: function addMarker(lat, lng) {
 	    var marker = new google.maps.Marker({
 	      position: { lat: lat, lng: lng },
-	      map: this.map
+	      map: this.map,
+	      icon: '/images/tennis.png'
 	    });
 	  },
 	  changeZoom: function changeZoom(num) {

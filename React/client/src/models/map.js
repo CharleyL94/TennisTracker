@@ -12,7 +12,8 @@ MapObject.prototype = {
   addMarker: function(lat, lng){
     var marker = new google.maps.Marker({
       position: {lat: lat, lng: lng},
-      map: this.map
+      map: this.map,
+      icon: '/images/tennis.png',
     })
   },
   changeZoom: function(num){
