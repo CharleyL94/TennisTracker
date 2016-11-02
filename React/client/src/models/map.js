@@ -2,7 +2,7 @@ var MapObject = function(container) {
 
 
   this.map = new google.maps.Map(container, {
-    center: {lat: 51, lng: 2},
+    center: {lat: 37, lng: 23},
     zoom: 2
   });
   this.info_window = new google.maps.InfoWindow();
@@ -12,7 +12,6 @@ var MapObject = function(container) {
 MapObject.prototype = {
   
   addMarker: function(lat, lng, note){
-   // var info_window = new google.maps.InfoWindow({content: note});
     var marker = new google.maps.Marker({
       position: {lat: lat, lng: lng},
       map: this.map,

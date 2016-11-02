@@ -19849,7 +19849,7 @@
 	var MapObject = function MapObject(container) {
 	
 	  this.map = new google.maps.Map(container, {
-	    center: { lat: 51, lng: 2 },
+	    center: { lat: 37, lng: 23 },
 	    zoom: 2
 	  });
 	  this.info_window = new google.maps.InfoWindow();
@@ -19858,7 +19858,6 @@
 	MapObject.prototype = {
 	
 	  addMarker: function addMarker(lat, lng, note) {
-	    // var info_window = new google.maps.InfoWindow({content: note});
 	    var marker = new google.maps.Marker({
 	      position: { lat: lat, lng: lng },
 	      map: this.map,
