@@ -19793,12 +19793,28 @@
 	    request.send();
 	  },
 	
-	  setPage: function setPage() {
+	  // setPage: function(){
+	  //   var players = document.getElementById('player-list');
+	  //   console.log("players is:", players)
+	  //   players.classList.toggle('hidden');
+	  //   var map = document.getElementById('map');
+	  //   map.classList.toggle('hidden')
+	  // },
+	
+	  getMap: function getMap() {
+	    console.log("get map called");
 	    var players = document.getElementById('player-list');
-	    console.log("players is:", players);
-	    players.classList.toggle('hidden');
+	    players.style.display = "none";
 	    var map = document.getElementById('map');
-	    map.classList.toggle('hidden');
+	    map.style.display = "block";
+	  },
+	
+	  getPlayers: function getPlayers() {
+	    console.log("get players called");
+	    var players = document.getElementById('player-list');
+	    players.style.display = "block";
+	    var map = document.getElementById('map');
+	    map.style.display = "none";
 	  },
 	
 	  render: function render() {
@@ -19822,12 +19838,12 @@
 	        ),
 	        React.createElement(
 	          'button',
-	          { onClick: this.setPage },
+	          { onClick: this.getPlayers },
 	          'View Players'
 	        ),
 	        React.createElement(
 	          'button',
-	          { onClick: this.setPage },
+	          { onClick: this.getMap },
 	          'View Map'
 	        )
 	      ),
@@ -20128,6 +20144,7 @@
 	
 	    if (wins.length > 0) {
 	      this.setState({ wins: wins });
+	      console.log("wins", wins);
 	    }
 	  },
 	

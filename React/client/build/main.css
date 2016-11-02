@@ -1,6 +1,7 @@
 body{
   font-family: 'Francois One', sans-serif;
   width: 100%;
+  margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -56,10 +57,10 @@ button:focus {
   margin: 0 auto;
 }
 
-/*#player-list{
+#player-list{
   display: none;
 }
-*/
+
 #header{
   background-color: #229641;
   padding: 1.5em;
@@ -90,6 +91,6 @@ ul{
   list-style: none;
 }
 
-.hidden{
+/*.hidden{
   display: none;
-}
+}*/

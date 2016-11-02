@@ -42,6 +42,7 @@ var PlayerDetail = React.createClass({
     }
     if (wins.length > 0){
     this.setState({wins: wins})
+    console.log("wins", wins)
     }
   },
 
