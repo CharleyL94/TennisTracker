@@ -19758,6 +19758,7 @@
 	var React = __webpack_require__(1);
 	var MapObject = __webpack_require__(160);
 	var MapBox = __webpack_require__(161);
+	var PlayerList = __webpack_require__(162);
 	
 	var Container = React.createClass({
 	  displayName: 'Container',
@@ -19815,10 +19816,10 @@
 	        { onClick: this.getPlayers },
 	        'View Players'
 	      ),
-	      React.createElement(MapBox, { tournaments: this.state.tournaments, players: this.state.players })
+	      React.createElement(MapBox, { tournaments: this.state.tournaments, players: this.state.players }),
+	      React.createElement(PlayerList, { tournaments: this.state.tournaments, players: this.state.players })
 	    );
 	  }
-	  // mapObject={new MapObject(document.getElementById('map'))} 
 	
 	});
 	
@@ -19979,6 +19980,75 @@
 	});
 	
 	module.exports = MapBox;
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var PlayerDetail = __webpack_require__(163);
+	
+	var PlayerList = function PlayerList(props) {
+	
+	  var playerNodes = props.players.map(function (player, index) {
+	    console.log("player ", player);
+	    return React.createElement(
+	      'li',
+	      { key: index },
+	      React.createElement(PlayerDetail, { player: player })
+	    );
+	  });
+	
+	  return React.createElement(
+	    'div',
+	    { id: 'player-list' },
+	    React.createElement(
+	      'ul',
+	      { className: 'custom-counter' },
+	      playerNodes
+	    )
+	  );
+	};
+	
+	module.exports = PlayerList;
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var PlayerDetail = React.createClass({
+	  displayName: 'PlayerDetail',
+	
+	
+	  render: function render() {
+	
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'h3',
+	        null,
+	        this.props.player.name
+	      ),
+	      React.createElement(
+	        'h4',
+	        null,
+	        'ATP World Ranking: ',
+	        this.props.player.ranking
+	      ),
+	      React.createElement('img', { src: this.props.player.image, id: this.props.player.id })
+	    );
+	  }
+	
+	});
+	
+	module.exports = PlayerDetail;
 
 /***/ }
 /******/ ]);

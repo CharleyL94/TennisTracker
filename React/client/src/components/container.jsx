@@ -1,6 +1,7 @@
 var React = require('react');
 var MapObject = require('../models/map');
-var MapBox = require('./mapBox')
+var MapBox = require('./mapBox');
+var PlayerList = require('./playerList');
 
 var Container = React.createClass({
 
@@ -46,10 +47,10 @@ var Container = React.createClass({
           <h1>Ace Tennis Tracker</h1>
           <button onClick={this.getPlayers}>View Players</button>
           <MapBox tournaments={this.state.tournaments} players={this.state.players}/>
+          <PlayerList tournaments={this.state.tournaments} players={this.state.players}/>
         </div>
     )
 }
-// mapObject={new MapObject(document.getElementById('map'))} 
 
 })
 
