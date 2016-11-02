@@ -20144,6 +20144,13 @@
 	      runnerups = runnerups1.split(',').join(', ');
 	    }
 	
+	    var divStyle = {
+	      backgroundImage: 'url(' + this.props.player.flag + ')',
+	      backgroundRepeat: 'no-repeat',
+	      backgroundSize: '300px 200px'
+	
+	    };
+	
 	    return React.createElement(
 	      "div",
 	      { className: "player-box" },
@@ -20170,7 +20177,11 @@
 	        "2016 Runner-up: ",
 	        runnerups
 	      ),
-	      React.createElement("img", { src: this.props.player.image, id: this.props.player.id })
+	      React.createElement(
+	        "div",
+	        { style: divStyle },
+	        React.createElement("img", { src: this.props.player.image, id: this.props.player.id })
+	      )
 	    );
 	  }
 	
