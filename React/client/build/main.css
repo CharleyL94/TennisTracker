@@ -8,9 +8,13 @@ h1{
   font-size: 3em;
 }
 
+h3, h4{
+  margin-left: 0.5em;
+}
+
 button{
   display: inline-block;
-  margin-left: 10em;
+  margin-left: 20em;
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -19,6 +23,7 @@ button{
   text-decoration: none;
   font-size: 1em;
 }
+
 
 
 button:nth-child(3) {

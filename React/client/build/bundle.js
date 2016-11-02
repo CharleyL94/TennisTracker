@@ -19852,22 +19852,23 @@
 	    center: { lat: 51, lng: 2 },
 	    zoom: 2
 	  });
-	  // use either this.markers or this.info-windows to be able to close a window on opening a new one.
-	  this.openWindows = [];
+	  this.info_window = new google.maps.InfoWindow();
 	};
 	
 	MapObject.prototype = {
 	
 	  addMarker: function addMarker(lat, lng, note) {
-	    var info_window = new google.maps.InfoWindow({ content: note });
+	    // var info_window = new google.maps.InfoWindow({content: note});
 	    var marker = new google.maps.Marker({
 	      position: { lat: lat, lng: lng },
 	      map: this.map,
 	      icon: '/images/tennis.png',
 	      animation: google.maps.Animation.DROP });
 	    marker.addListener('click', function () {
-	      info_window.open(map, marker);
-	    });
+	      this.info_window.close();
+	      this.info_window.setContent(note);
+	      this.info_window.open(map, marker);
+	    }.bind(this));
 	  },
 	
 	  changeZoom: function changeZoom(num) {
