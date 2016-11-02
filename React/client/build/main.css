@@ -8,14 +8,18 @@ h1{
 
 button{
   display: inline-block;
-  margin-left: 20em;
+  margin-left: 10em;
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1.6em 2.4em;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
+}
+
+button:nth-child(3) {
+    margin-left: 2em;
 }
 
 #map {
@@ -26,4 +30,8 @@ button{
 
 #player-list{
   display: none;
+}
+
+#header{
+  background-color: gold;
 }

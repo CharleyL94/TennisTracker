@@ -19793,7 +19793,19 @@
 	    request.send();
 	  },
 	
-	  getPlayers: function getPlayers() {},
+	  getPlayers: function getPlayers() {
+	    var list = document.getElementById('player-list');
+	    list.style.display = "block";
+	    var map = document.getElementById('map');
+	    map.style.display = "none";
+	  },
+	
+	  getMap: function getMap() {
+	    var list = document.getElementById('player-list');
+	    list.style.display = "none";
+	    var map = document.getElementById('map');
+	    map.style.display = "block";
+	  },
 	
 	  render: function render() {
 	    if (!this.state.players) {
@@ -19807,16 +19819,25 @@
 	      'div',
 	      null,
 	      React.createElement(
-	        'h1',
-	        null,
-	        'Ace Tennis Tracker'
+	        'div',
+	        { id: 'header' },
+	        React.createElement(
+	          'h1',
+	          null,
+	          'Ace Tennis Tracker'
+	        ),
+	        React.createElement(
+	          'button',
+	          { onClick: this.getPlayers },
+	          'View Players'
+	        ),
+	        React.createElement(
+	          'button',
+	          { onClick: this.getMap },
+	          'View Map'
+	        )
 	      ),
-	      React.createElement(
-	        'button',
-	        { onClick: this.getPlayers },
-	        'View Players'
-	      ),
-	      React.createElement(MapBox, { tournaments: this.state.tournaments, players: this.state.players }),
+	      React.createElement(MapBox, { id: 'map', tournaments: this.state.tournaments, players: this.state.players }),
 	      React.createElement(PlayerList, { tournaments: this.state.tournaments, players: this.state.players })
 	    );
 	  }
