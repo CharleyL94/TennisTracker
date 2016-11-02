@@ -49,7 +49,9 @@ button:nth-child(3) {
   height: 400px;
   margin-left: 3em;
   margin-bottom: 2em;
+  margin-right: 3em;
   width: 16em;
+  overflow: auto;
 }
 
 img{
