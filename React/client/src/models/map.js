@@ -7,12 +7,14 @@ var MapObject = function(container) {
   });
   // use either this.markers or this.info-windows to be able to close a window on opening a new one.
   this.openWindows = [];
+ 
 }
 
 MapObject.prototype = {
 
+  
   addMarker: function(lat, lng, note){
-    var info_window = new google.maps.InfoWindow({content: note});
+   var info_window = new google.maps.InfoWindow({content: note});
     var marker = new google.maps.Marker({
       position: {lat: lat, lng: lng},
       map: this.map,
