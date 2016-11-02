@@ -6,7 +6,7 @@ var MapObject = function(container) {
     zoom: 2
   });
   // use either this.markers or this.info-windows to be able to close a window on opening a new one.
-  // this.markers = [];
+  this.openWindows = [];
 }
 
 MapObject.prototype = {
