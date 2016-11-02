@@ -48,13 +48,11 @@
 	
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
+	var Container = __webpack_require__(159);
+	var MapObject = __webpack_require__(160);
 	
 	window.onload = function () {
-	  ReactDOM.render(React.createElement(
-	    'h1',
-	    null,
-	    ' App Started '
-	  ), document.getElementById('app'));
+	  ReactDOM.render(React.createElement(Container, { url: 'http://localhost:3001/api' }), document.getElementById('app'));
 	};
 
 /***/ },
@@ -19750,6 +19748,237 @@
 	
 	module.exports = __webpack_require__(3);
 
+
+/***/ },
+/* 159 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var MapObject = __webpack_require__(160);
+	var MapBox = __webpack_require__(161);
+	
+	var Container = React.createClass({
+	  displayName: 'Container',
+	
+	
+	  getInitialState: function getInitialState() {
+	    return { players: null, tournaments: null };
+	  },
+	
+	  componentDidMount: function componentDidMount() {
+	    this.getPlayerData();
+	    this.getTournamentData();
+	  },
+	  // NEED TO TRY AND REFACTOR THE TWO GET DATA METHODS AS THEY'RE VERY SIMILAR
+	  getPlayerData: function getPlayerData() {
+	    var request = new XMLHttpRequest();
+	    request.open("GET", this.props.url + "/players");
+	    request.onload = function () {
+	      var players = JSON.parse(request.responseText);
+	      this.setState({ players: players });
+	    }.bind(this);
+	    request.send();
+	  },
+	
+	  getTournamentData: function getTournamentData() {
+	    var request = new XMLHttpRequest();
+	    request.open("GET", this.props.url + "/tournaments");
+	    request.onload = function () {
+	      var tournaments = JSON.parse(request.responseText);
+	      this.setState({ tournaments: tournaments });
+	    }.bind(this);
+	    request.send();
+	  },
+	
+	  getPlayers: function getPlayers() {},
+	
+	  render: function render() {
+	    if (!this.state.players) {
+	      return React.createElement(
+	        'h1',
+	        null,
+	        'Loading'
+	      );
+	    }
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'h1',
+	        null,
+	        'Ace Tennis Tracker'
+	      ),
+	      React.createElement(
+	        'button',
+	        { onClick: this.getPlayers },
+	        'View Players'
+	      ),
+	      React.createElement(MapBox, { tournaments: this.state.tournaments, players: this.state.players })
+	    );
+	  }
+	  // mapObject={new MapObject(document.getElementById('map'))} 
+	
+	});
+	
+	module.exports = Container;
+
+/***/ },
+/* 160 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	var MapObject = function MapObject(container) {
+	
+	  this.map = new google.maps.Map(container, {
+	    center: { lat: 51, lng: 2 },
+	    zoom: 2
+	  });
+	  // use either this.markers or this.info-windows to be able to close a window on opening a new one.
+	  this.openWindows = [];
+	};
+	
+	MapObject.prototype = {
+	
+	  addMarker: function addMarker(lat, lng, note) {
+	    var info_window = new google.maps.InfoWindow({ content: note });
+	    var marker = new google.maps.Marker({
+	      position: { lat: lat, lng: lng },
+	      map: this.map,
+	      icon: '/images/tennis.png',
+	      animation: google.maps.Animation.DROP });
+	    marker.addListener('click', function () {
+	      info_window.open(map, marker);
+	    });
+	  },
+	
+	  changeZoom: function changeZoom(num) {
+	    this.map.setZoom(num);
+	  },
+	  centerMap: function centerMap(latlng) {
+	    this.map.setCenter(latlng);
+	  }
+	};
+	
+	module.exports = MapObject;
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var MapObject = __webpack_require__(160);
+	
+	var MapBox = React.createClass({
+	  displayName: 'MapBox',
+	
+	
+	  // NEED TO REFACTOR THIS.
+	  makeInfoWindowContent: function makeInfoWindowContent(tournament) {
+	    var winner;
+	    var _iteratorNormalCompletion = true;
+	    var _didIteratorError = false;
+	    var _iteratorError = undefined;
+	
+	    try {
+	      for (var _iterator = this.props.players[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	        var player = _step.value;
+	
+	        if (player.id === tournament.winner) {
+	          winner = player.name;
+	        }
+	      }
+	    } catch (err) {
+	      _didIteratorError = true;
+	      _iteratorError = err;
+	    } finally {
+	      try {
+	        if (!_iteratorNormalCompletion && _iterator.return) {
+	          _iterator.return();
+	        }
+	      } finally {
+	        if (_didIteratorError) {
+	          throw _iteratorError;
+	        }
+	      }
+	    }
+	
+	    var runnerup;
+	    var _iteratorNormalCompletion2 = true;
+	    var _didIteratorError2 = false;
+	    var _iteratorError2 = undefined;
+	
+	    try {
+	      for (var _iterator2 = this.props.players[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+	        var player = _step2.value;
+	
+	        if (player.id === tournament.runnerup) {
+	          runnerup = player.name;
+	        }
+	      }
+	    } catch (err) {
+	      _didIteratorError2 = true;
+	      _iteratorError2 = err;
+	    } finally {
+	      try {
+	        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+	          _iterator2.return();
+	        }
+	      } finally {
+	        if (_didIteratorError2) {
+	          throw _iteratorError2;
+	        }
+	      }
+	    }
+	
+	    var string = "<h4>Tournament: " + tournament.name + "</h4><h5> Location: " + tournament.location + " </h5><h5>2016 Winner: " + winner + " </h5><h5>2016 Runner-up: " + runnerup + "</h5>";
+	    return string;
+	  },
+	
+	  render: function render() {
+	    var mapObject = new MapObject(document.getElementById('map'));
+	    console.log("props tournaments", this.props.tournaments);
+	
+	    if (this.props.tournaments) {
+	      var _iteratorNormalCompletion3 = true;
+	      var _didIteratorError3 = false;
+	      var _iteratorError3 = undefined;
+	
+	      try {
+	        for (var _iterator3 = this.props.tournaments[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+	          var tournament = _step3.value;
+	
+	          var content = this.makeInfoWindowContent(tournament);
+	          mapObject.addMarker(parseInt(tournament.lat, 10), parseInt(tournament.lng, 10), content);
+	        }
+	      } catch (err) {
+	        _didIteratorError3 = true;
+	        _iteratorError3 = err;
+	      } finally {
+	        try {
+	          if (!_iteratorNormalCompletion3 && _iterator3.return) {
+	            _iterator3.return();
+	          }
+	        } finally {
+	          if (_didIteratorError3) {
+	            throw _iteratorError3;
+	          }
+	        }
+	      }
+	
+	      ;
+	    }
+	
+	    return React.createElement('div', null);
+	  }
+	
+	});
+	
+	module.exports = MapBox;
 
 /***/ }
 /******/ ]);
