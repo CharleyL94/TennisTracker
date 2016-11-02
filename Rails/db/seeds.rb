@@ -6,6 +6,8 @@ p2 = Player.create({name: "Novak Djokovic", country: "Serbia", flag:"http://www.
 p3 = Player.create({name: "Rafael Nadal", country: "Spain", flag:"http://www.flags.net/images/largeflags/SPAN0001.GIF", ranking: 6, image:"http://www.atpworldtour.com/~/media/tennis/players/head-shot/2016/nadal_head_16.png"})
 p4 = Player.create({name: "Jo-Wilfried Tsonga", country: "France", flag:"http://www.flags.net/images/largeflags/FRAN0001.GIF", ranking: 13, image:"http://www.atpworldtour.com/en/players/jo-wilfried-tsonga/t786/www.atpworldtour.com/~/media/tennis/players/head-shot/2016/tsonga_head_16.png"})
 p5 = Player.create({name: "Stan Wawrinka", country: "Switzerland", flag: "http://www.flags.net/images/largeflags/SWIT0003.GIF", ranking: 3, image: "http://www.atpworldtour.com/~/media/tennis/players/head-shot/2016/wawrinka_head_16.png"})
+p6 = Player.create({name: "Kei Nishikori", country: "Japan", flag: "http://www.flags.net/images/largeflags/JAPA0001.GIF", ranking: 4, image: "http://www.atpworldtour.com/~/media/tennis/players/head-shot/2016/nishikori_head_16.png"})
+p7 = Player.create({name: "Milos Raonic", country: "Canada", flag: "http://www.flags.net/images/largeflags/CANA0001.GIF", ranking:5, image: "http://www.atpworldtour.com/~/media/tennis/players/head-shot/2016/raonic_head_16.png"})
 
 
 t1 = Tournament.create({name: "Wimbledon", winner: p1.id, runnerup: p4.id, lat: 51.432185, lng: -0.215258, location: "All England Lawn Tennis Club"})
