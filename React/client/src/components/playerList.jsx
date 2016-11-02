@@ -13,7 +13,7 @@ var PlayerList = function( props ) {
   })
 
   return(
-    <div id='player-list'>
+    <div id='player-list' className='hidden'>
       <ul className='custom-counter'>
         {playerNodes}
       </ul>
