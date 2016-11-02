@@ -1,9 +1,12 @@
 var React = require('react');
 var PlayerDetail = require('./playerDetail');
+var _ = require('lodash')
 
 var PlayerList = function( props ) {
 
-  var playerNodes = props.players.map(function(player, index) {
+  var myObjects = _.sortBy(props.players, 'ranking');
+
+  var playerNodes = myObjects.map(function(player, index) {
     console.log("player ", player)
     return (
       <li key={index}>
