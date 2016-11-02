@@ -14,3 +14,6 @@ t1 = Tournament.create({name: "Wimbledon", winner: p1.id, runnerup: p4.id, lat: 
 t2 = Tournament.create({name: "French Open", winner: p2.id, runnerup: p1.id, lat: 48.847344, lng: 2.250917, location: "Roland-Garros"})
 t3 = Tournament.create({name: "Australian Open", location:"Rod Laver Arena", winner: p2.id, runnerup: p1.id, lat: -37.8223566, lng: 144.9788666})
 t4 = Tournament.create({name: "US Open", location: "USTA Billie Jean King National Tennis Center", winner: p5.id, runnerup: p2.id, lat: 40.747040830543085, lng: -73.845304})
+t4 = Tournament.create({name: "Madrid Open", location: "Caja Magica", winner: p2.id, runnerup: p1.id, lat: 40.416775, lng: -3.703790})
+t5 = Tournament.create({name: "Chennai Open", location: "SDAT Tennis Stadium", winner: p5.id, runnerup: p6.id, lat: 13.082680, lng: 80.270718})
+t6 = Tournament.create({name: "Vienna Open", location: "Wiener Stadthalle", winner: p1.id, runnerup: p4.id, lat: 48.194383, lng: 16.323514})
