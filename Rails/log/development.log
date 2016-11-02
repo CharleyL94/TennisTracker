@@ -1440,3 +1440,1347 @@ Started GET "/api/players" for ::1 at 2016-11-01 15:21:17 +0000
 Processing by PlayersController#index as */*
   [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
 Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 15:59:34 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 16:00:37 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:11:08 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.7ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:12:09 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:12:42 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:16:30 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:16:49 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.7ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:17:39 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:18:09 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:22:00 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:22:32 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:25:52 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:26:10 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:26:10 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.6ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 38ms (Views: 8.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:27:01 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:27:01 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:27:15 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:27:15 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:28:26 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:28:26 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:29:32 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:29:32 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:30:31 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:30:31 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:30:56 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:30:56 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:31:33 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:31:33 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:32:36 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:32:36 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:33:02 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:33:02 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:33:11 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:33:11 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:39:06 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:39:06 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:40:56 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:40:56 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 19:44:54 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 19:44:54 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:11:19 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:11:19 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:12:55 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:12:55 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:13:13 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:13:13 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:13:30 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:13:30 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:13:41 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:13:41 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:16:03 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:16:03 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:16:33 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:16:33 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:17:13 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:17:13 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:20:33 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:20:33 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:21:48 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:21:48 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:22:16 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:22:16 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:22:46 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:22:46 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.4ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:32:06 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:32:06 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:33:01 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:33:01 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "players"
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "tournaments"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Andy Murray"], ["ranking", 2], ["image", "http://www.atpworldtour.com/~/media/tennis/players/head-shot/vibrant/murray-headshot15.png"], ["created_at", "2016-11-01 20:39:18.538387"], ["updated_at", "2016-11-01 20:39:18.538387"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Novak Djokovic"], ["ranking", 1], ["image", "https://s-media-cache-ak0.pinimg.com/originals/9b/89/56/9b89569e12c72959ee9cd4e0d62579d1.png"], ["created_at", "2016-11-01 20:39:18.542899"], ["updated_at", "2016-11-01 20:39:18.542899"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rafael Nadal"], ["ranking", 6], ["image", "http://www.atpworldtour.com/~/media/tennis/players/head-shot/2016/nadal_head_16.png"], ["created_at", "2016-11-01 20:39:18.544619"], ["updated_at", "2016-11-01 20:39:18.544619"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Jo-Wilfried Tsonga"], ["ranking", 13], ["image", "http://www.atpworldtour.com/en/players/jo-wilfried-tsonga/t786/www.atpworldtour.com/~/media/tennis/players/head-shot/2016/tsonga_head_16.png"], ["created_at", "2016-11-01 20:39:18.546330"], ["updated_at", "2016-11-01 20:39:18.546330"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "winner", "runnerup", "lat", "lng", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wimbledon"], ["winner", 5], ["runnerup", 8], ["lat", 51.432185], ["lng", -0.215258], ["location", "All England Lawn Tennis Club"], ["created_at", "2016-11-01 20:39:18.553419"], ["updated_at", "2016-11-01 20:39:18.553419"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "winner", "runnerup", "lat", "lng", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "French Open"], ["winner", 6], ["runnerup", 5], ["lat", 48.847344], ["lng", 2.250917], ["location", "Roland-Garros"], ["created_at", "2016-11-01 20:39:18.555897"], ["updated_at", "2016-11-01 20:39:18.555897"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "winner", "runnerup", "lat", "lng", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rod Laver Arena"], ["winner", 6], ["runnerup", 5], ["lat", -37.8223566], ["lng", 144.9788666], ["created_at", "2016-11-01 20:39:18.557769"], ["updated_at", "2016-11-01 20:39:18.557769"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:40:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.1ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 17ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:40:29 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.8ms)[0m  DELETE FROM "players"
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "tournaments"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Andy Murray"], ["ranking", 2], ["image", "http://www.atpworldtour.com/~/media/tennis/players/head-shot/vibrant/murray-headshot15.png"], ["created_at", "2016-11-01 20:41:19.656788"], ["updated_at", "2016-11-01 20:41:19.656788"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Novak Djokovic"], ["ranking", 1], ["image", "https://s-media-cache-ak0.pinimg.com/originals/9b/89/56/9b89569e12c72959ee9cd4e0d62579d1.png"], ["created_at", "2016-11-01 20:41:19.660842"], ["updated_at", "2016-11-01 20:41:19.660842"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rafael Nadal"], ["ranking", 6], ["image", "http://www.atpworldtour.com/~/media/tennis/players/head-shot/2016/nadal_head_16.png"], ["created_at", "2016-11-01 20:41:19.662666"], ["updated_at", "2016-11-01 20:41:19.662666"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Jo-Wilfried Tsonga"], ["ranking", 13], ["image", "http://www.atpworldtour.com/en/players/jo-wilfried-tsonga/t786/www.atpworldtour.com/~/media/tennis/players/head-shot/2016/tsonga_head_16.png"], ["created_at", "2016-11-01 20:41:19.664397"], ["updated_at", "2016-11-01 20:41:19.664397"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tournaments" ("name", "winner", "runnerup", "lat", "lng", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wimbledon"], ["winner", 9], ["runnerup", 12], ["lat", 51.432185], ["lng", -0.215258], ["location", "All England Lawn Tennis Club"], ["created_at", "2016-11-01 20:41:19.671528"], ["updated_at", "2016-11-01 20:41:19.671528"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "winner", "runnerup", "lat", "lng", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "French Open"], ["winner", 10], ["runnerup", 9], ["lat", 48.847344], ["lng", 2.250917], ["location", "Roland-Garros"], ["created_at", "2016-11-01 20:41:19.673937"], ["updated_at", "2016-11-01 20:41:19.673937"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "location", "winner", "runnerup", "lat", "lng", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Australian Open"], ["location", "Rod Laver Arena"], ["winner", 10], ["runnerup", 9], ["lat", -37.8223566], ["lng", 144.9788666], ["created_at", "2016-11-01 20:41:19.675905"], ["updated_at", "2016-11-01 20:41:19.675905"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:41:42 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.1ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 13ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:41:43 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:42:19 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:42:19 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.7ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:42:33 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:42:33 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:42:40 +0000
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:42:40 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "players"
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "tournaments"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Andy Murray"], ["ranking", 2], ["image", "http://www.atpworldtour.com/~/media/tennis/players/head-shot/vibrant/murray-headshot15.png"], ["created_at", "2016-11-01 20:50:00.338698"], ["updated_at", "2016-11-01 20:50:00.338698"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Novak Djokovic"], ["ranking", 1], ["image", "https://s-media-cache-ak0.pinimg.com/originals/9b/89/56/9b89569e12c72959ee9cd4e0d62579d1.png"], ["created_at", "2016-11-01 20:50:00.342644"], ["updated_at", "2016-11-01 20:50:00.342644"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rafael Nadal"], ["ranking", 6], ["image", "http://www.atpworldtour.com/~/media/tennis/players/head-shot/2016/nadal_head_16.png"], ["created_at", "2016-11-01 20:50:00.345017"], ["updated_at", "2016-11-01 20:50:00.345017"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Jo-Wilfried Tsonga"], ["ranking", 13], ["image", "http://www.atpworldtour.com/en/players/jo-wilfried-tsonga/t786/www.atpworldtour.com/~/media/tennis/players/head-shot/2016/tsonga_head_16.png"], ["created_at", "2016-11-01 20:50:00.346723"], ["updated_at", "2016-11-01 20:50:00.346723"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stan Wawrinka"], ["ranking", 3], ["image", "http://www.atpworldtour.com/en/players/stan-wawrinka/w367/overview"], ["created_at", "2016-11-01 20:50:00.348495"], ["updated_at", "2016-11-01 20:50:00.348495"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tournaments" ("name", "winner", "runnerup", "lat", "lng", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Wimbledon"], ["winner", 13], ["runnerup", 16], ["lat", 51.432185], ["lng", -0.215258], ["location", "All England Lawn Tennis Club"], ["created_at", "2016-11-01 20:50:00.355556"], ["updated_at", "2016-11-01 20:50:00.355556"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "winner", "runnerup", "lat", "lng", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "French Open"], ["winner", 14], ["runnerup", 13], ["lat", 48.847344], ["lng", 2.250917], ["location", "Roland-Garros"], ["created_at", "2016-11-01 20:50:00.358333"], ["updated_at", "2016-11-01 20:50:00.358333"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tournaments" ("name", "location", "winner", "runnerup", "lat", "lng", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Australian Open"], ["location", "Rod Laver Arena"], ["winner", 14], ["runnerup", 13], ["lat", -37.8223566], ["lng", 144.9788666], ["created_at", "2016-11-01 20:50:00.361184"], ["updated_at", "2016-11-01 20:50:00.361184"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "location", "winner", "runnerup", "lat", "lng", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "US Open"], ["location", "USTA Billie Jean King National Tennis Center"], ["winner", 17], ["runnerup", 14], ["lat", 40.7470408305431], ["lng", -73.845304], ["created_at", "2016-11-01 20:50:00.363362"], ["updated_at", "2016-11-01 20:50:00.363362"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:50:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlayersController#index as */*
+  [1m[35mPlayer Load (0.1ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:50:21 +0000
+Processing by TournamentsController#index as */*
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:51:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.4ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:51:14 +0000
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.5ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.7ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:51:39 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.8ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.0ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (107.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePlayers (20161101114602)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "ranking" integer, "image" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20161101114602"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTournaments (20161101121217)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer, "location" varchar, "lat" integer, "lng" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_tournaments_on_player_id" ON "tournaments" ("player_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20161101121217"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Migrating to AddWinnerToTournament (20161101130410)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "tournaments" ADD "winner" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "tournaments" ADD "runnerup" integer
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161101130410"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to ChangeDataTypeForFieldname (20161101130935)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "atournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer, "location" varchar, "lat" integer, "lng" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "winner" integer, "runnerup" integer) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tournaments_on_player_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tournaments_on_player_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_atournaments_on_player_id" ON "atournaments" ("player_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "tournaments"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "tournaments"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer, "location" varchar, "lat" decimal, "lng" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "winner" integer, "runnerup" integer) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_atournaments_on_player_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_atournaments_on_player_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_tournaments_on_player_id" ON "tournaments" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "atournaments"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "atournaments"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20161101130935"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to ChangeDataTypeForFieldname2 (20161101131152)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "atournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer, "location" varchar, "lat" decimal, "lng" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "winner" integer, "runnerup" integer) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tournaments_on_player_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tournaments_on_player_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_atournaments_on_player_id" ON "atournaments" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "tournaments"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "tournaments"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer, "location" varchar, "lat" decimal, "lng" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "winner" integer, "runnerup" integer) 
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_atournaments_on_player_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_atournaments_on_player_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_tournaments_on_player_id" ON "tournaments" ("player_id")
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "atournaments"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "atournaments"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161101131152"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to RemoveFieldNameFromTableName (20161101131508)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "atournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer, "location" varchar, "lat" decimal, "lng" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "winner" integer, "runnerup" integer) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tournaments_on_player_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tournaments_on_player_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_atournaments_on_player_id" ON "atournaments" ("player_id")
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "tournaments"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "tournaments"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "lat" decimal, "lng" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "winner" integer, "runnerup" integer) [0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_atournaments_on_player_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_atournaments_on_player_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "atournaments"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "atournaments"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161101131508"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.6ms)[0m  DELETE FROM "players"
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "tournaments"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Andy Murray"], ["ranking", 2], ["image", "http://www.atpworldtour.com/~/media/tennis/players/head-shot/vibrant/murray-headshot15.png"], ["created_at", "2016-11-01 20:52:00.301744"], ["updated_at", "2016-11-01 20:52:00.301744"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Novak Djokovic"], ["ranking", 1], ["image", "https://s-media-cache-ak0.pinimg.com/originals/9b/89/56/9b89569e12c72959ee9cd4e0d62579d1.png"], ["created_at", "2016-11-01 20:52:00.305370"], ["updated_at", "2016-11-01 20:52:00.305370"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rafael Nadal"], ["ranking", 6], ["image", "http://www.atpworldtour.com/~/media/tennis/players/head-shot/2016/nadal_head_16.png"], ["created_at", "2016-11-01 20:52:00.306951"], ["updated_at", "2016-11-01 20:52:00.306951"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Jo-Wilfried Tsonga"], ["ranking", 13], ["image", "http://www.atpworldtour.com/en/players/jo-wilfried-tsonga/t786/www.atpworldtour.com/~/media/tennis/players/head-shot/2016/tsonga_head_16.png"], ["created_at", "2016-11-01 20:52:00.308560"], ["updated_at", "2016-11-01 20:52:00.308560"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "ranking", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stan Wawrinka"], ["ranking", 3], ["image", "http://www.atpworldtour.com/en/players/stan-wawrinka/w367/overview"], ["created_at", "2016-11-01 20:52:00.310117"], ["updated_at", "2016-11-01 20:52:00.310117"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tournaments" ("name", "winner", "runnerup", "lat", "lng", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Wimbledon"], ["winner", 1], ["runnerup", 4], ["lat", 51.432185], ["lng", -0.215258], ["location", "All England Lawn Tennis Club"], ["created_at", "2016-11-01 20:52:00.318015"], ["updated_at", "2016-11-01 20:52:00.318015"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "winner", "runnerup", "lat", "lng", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "French Open"], ["winner", 2], ["runnerup", 1], ["lat", 48.847344], ["lng", 2.250917], ["location", "Roland-Garros"], ["created_at", "2016-11-01 20:52:00.320344"], ["updated_at", "2016-11-01 20:52:00.320344"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "location", "winner", "runnerup", "lat", "lng", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Australian Open"], ["location", "Rod Laver Arena"], ["winner", 2], ["runnerup", 1], ["lat", -37.8223566], ["lng", 144.9788666], ["created_at", "2016-11-01 20:52:00.322441"], ["updated_at", "2016-11-01 20:52:00.322441"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "location", "winner", "runnerup", "lat", "lng", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "US Open"], ["location", "USTA Billie Jean King National Tennis Center"], ["winner", 5], ["runnerup", 2], ["lat", 40.7470408305431], ["lng", -73.845304], ["created_at", "2016-11-01 20:52:00.324675"], ["updated_at", "2016-11-01 20:52:00.324675"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:52:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.1ms)[0m  SELECT "players".* FROM "players"
+Completed 200 OK in 14ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:52:16 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:52:16 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.4ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 23ms (Views: 13.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:54:35 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:54:35 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.5ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:55:04 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.9ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:55:04 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:55:16 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:55:16 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.4ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:55:28 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:55:28 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 20:57:43 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 20:57:43 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.4ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:01:54 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:01:54 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.5ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:02:44 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:02:44 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.5ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:04:16 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:04:16 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:04:28 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:04:28 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:05:35 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:05:35 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:05:56 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:05:56 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:06:15 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:06:15 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:09:36 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:09:36 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:09:46 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:09:46 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.4ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:10:36 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:10:36 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.1ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:10:50 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:10:50 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:11:06 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:11:06 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:11:16 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:11:17 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:11:27 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:11:27 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:11:32 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:11:32 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.5ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:11:42 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:11:42 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:11:48 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:11:48 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:22:59 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:22:59 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:27:13 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.8ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:27:13 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:27:44 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:27:44 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.4ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:29:03 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.8ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:29:03 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:34:13 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.7ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:34:13 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.4ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:36:17 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:36:17 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:36:53 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:36:53 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:37:13 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:37:13 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:37:53 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:37:53 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:39:24 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:39:24 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:39:41 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:39:41 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-01 21:41:15 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-01 21:41:15 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-02 09:16:01 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (1.5ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 21ms (Views: 13.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-02 09:16:01 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.4ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-02 09:21:33 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-02 09:21:33 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/players" for ::1 at 2016-11-02 09:21:37 +0000
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.7ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tournaments" for ::1 at 2016-11-02 09:21:37 +0000
+Processing by TournamentsController#index as */*
+  [1m[35mTournament Load (0.5ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.5ms)
