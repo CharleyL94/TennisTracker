@@ -24,6 +24,21 @@ button:nth-child(3) {
     margin-left: 2em;
 }
 
+button:hover {
+    transition: all 60ms ease;
+    opacity: .85;
+  }
+  
+button:active {
+    transition: all 60ms ease;
+    opacity: .75;
+  }
+  
+button:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px;
+  }
+
 #map {
   width: 700px;
   height: 400px;
@@ -53,6 +68,7 @@ button:nth-child(3) {
   margin-right: 3em;
   width: 16em;
   overflow: auto;
+  opacity: .85;
 }
 
 img{

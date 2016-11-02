@@ -61,6 +61,14 @@ var PlayerDetail = React.createClass({
       var runnerups1 = this.state.runnerups.toString();
       runnerups = runnerups1.split(',').join(', ');
     }
+
+    var divStyle = {
+    backgroundImage: 'url(' + this.props.player.flag + ')',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '300px 200px'
+
+  };
+    
     
     return (
       <div className='player-box'>
@@ -68,7 +76,9 @@ var PlayerDetail = React.createClass({
         <h4>ATP World Ranking: {this.props.player.ranking}</h4>
         <h4>2016 Winner: {wins}</h4>
         <h4>2016 Runner-up: {runnerups}</h4>
-        <img src={this.props.player.image} id={this.props.player.id}></img>
+        <div style={divStyle}>
+          <img src={this.props.player.image} id={this.props.player.id}></img>
+        </div>
       </div>
   )
 }
