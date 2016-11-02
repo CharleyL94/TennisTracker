@@ -1,6 +1,7 @@
 var React = require('react');
 var MapObject = require('../models/map');
-var MapBox = require('./mapBox')
+var MapBox = require('./mapBox');
+var PlayerList = require('./playerList');
 
 var Container = React.createClass({
 
@@ -34,7 +35,18 @@ var Container = React.createClass({
   },
 
   getPlayers: function(){
+    var list = document.getElementById('player-list');
+    list.style.display = "block";
+    var map = document.getElementById('map');
+    map.style.display = "none";
+  },
 
+
+  getMap: function(){
+    var list = document.getElementById('player-list');
+    list.style.display = "none";
+    var map = document.getElementById('map');
+    map.style.display = "block";
   },
 
   render: function(){
@@ -43,13 +55,16 @@ var Container = React.createClass({
     }
     return(
         <div>
+          <div id='header'>
           <h1>Ace Tennis Tracker</h1>
           <button onClick={this.getPlayers}>View Players</button>
-          <MapBox tournaments={this.state.tournaments} players={this.state.players}/>
+          <button onClick={this.getMap}>View Map</button>
+          </div>
+          <MapBox id='map' tournaments={this.state.tournaments} players={this.state.players}/>
+          <PlayerList tournaments={this.state.tournaments} players={this.state.players}/>
         </div>
     )
 }
-// mapObject={new MapObject(document.getElementById('map'))} 
 
 })
 

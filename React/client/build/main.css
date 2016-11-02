@@ -1,5 +1,6 @@
 body{
-  font-family: sans-serif;
+  font-family: 'Francois One', sans-serif;
+  width: 100%;
 }
 
 h1{
@@ -8,18 +9,54 @@ h1{
 
 button{
   display: inline-block;
-  margin-left: 20em;
+  margin-left: 10em;
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1.6em 2.4em;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
+}
+
+button:nth-child(3) {
+    margin-left: 2em;
 }
 
 #map {
   width: 700px;
   height: 400px;
   border:1px solid black;
+  margin: 0 auto;
+}
+
+#player-list{
+  display: none;
+}
+
+#header{
+  background-color: gold;
+  padding: 2em;
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+
+.player-box{
+  background-color: #4F953B;
+  display: inline-block;
+  float: left;
+  align: center;
+  height: 400px;
+  margin-left: 3em;
+  margin-bottom: 2em;
+  width: 16em;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+}
+
+ul{
+  list-style: none;
 }

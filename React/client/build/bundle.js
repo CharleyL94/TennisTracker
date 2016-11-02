@@ -19758,6 +19758,7 @@
 	var React = __webpack_require__(1);
 	var MapObject = __webpack_require__(160);
 	var MapBox = __webpack_require__(161);
+	var PlayerList = __webpack_require__(162);
 	
 	var Container = React.createClass({
 	  displayName: 'Container',
@@ -19792,7 +19793,19 @@
 	    request.send();
 	  },
 	
-	  getPlayers: function getPlayers() {},
+	  getPlayers: function getPlayers() {
+	    var list = document.getElementById('player-list');
+	    list.style.display = "block";
+	    var map = document.getElementById('map');
+	    map.style.display = "none";
+	  },
+	
+	  getMap: function getMap() {
+	    var list = document.getElementById('player-list');
+	    list.style.display = "none";
+	    var map = document.getElementById('map');
+	    map.style.display = "block";
+	  },
 	
 	  render: function render() {
 	    if (!this.state.players) {
@@ -19806,19 +19819,28 @@
 	      'div',
 	      null,
 	      React.createElement(
-	        'h1',
-	        null,
-	        'Ace Tennis Tracker'
+	        'div',
+	        { id: 'header' },
+	        React.createElement(
+	          'h1',
+	          null,
+	          'Ace Tennis Tracker'
+	        ),
+	        React.createElement(
+	          'button',
+	          { onClick: this.getPlayers },
+	          'View Players'
+	        ),
+	        React.createElement(
+	          'button',
+	          { onClick: this.getMap },
+	          'View Map'
+	        )
 	      ),
-	      React.createElement(
-	        'button',
-	        { onClick: this.getPlayers },
-	        'View Players'
-	      ),
-	      React.createElement(MapBox, { tournaments: this.state.tournaments, players: this.state.players })
+	      React.createElement(MapBox, { id: 'map', tournaments: this.state.tournaments, players: this.state.players }),
+	      React.createElement(PlayerList, { tournaments: this.state.tournaments, players: this.state.players })
 	    );
 	  }
-	  // mapObject={new MapObject(document.getElementById('map'))} 
 	
 	});
 	
@@ -19979,6 +20001,186 @@
 	});
 	
 	module.exports = MapBox;
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var PlayerDetail = __webpack_require__(163);
+	
+	var PlayerList = function PlayerList(props) {
+	
+	  var playerNodes = props.players.map(function (player, index) {
+	    console.log("player ", player);
+	    return React.createElement(
+	      'li',
+	      { key: index },
+	      React.createElement(PlayerDetail, { player: player, tournaments: props.tournaments })
+	    );
+	  });
+	
+	  return React.createElement(
+	    'div',
+	    { id: 'player-list' },
+	    React.createElement(
+	      'ul',
+	      { className: 'custom-counter' },
+	      playerNodes
+	    )
+	  );
+	};
+	
+	module.exports = PlayerList;
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	var React = __webpack_require__(1);
+	
+	var PlayerDetail = React.createClass({
+	  displayName: "PlayerDetail",
+	
+	
+	  getInitialState: function getInitialState() {
+	    return {
+	      wins: null,
+	      runnerups: null,
+	      tournaments: null
+	    };
+	  },
+	
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    this.setState({ tournaments: nextProps.tournaments });
+	    console.log("player tournaments", this.state.tournaments);
+	    this.checkTournamentWins(nextProps.tournaments);
+	    this.checkTournamentRunnerUps(nextProps.tournaments);
+	  },
+	
+	  checkTournamentRunnerUps: function checkTournamentRunnerUps(tournaments) {
+	    console.log("check for runner up has been called");
+	    var runnerups = [];
+	    var _iteratorNormalCompletion = true;
+	    var _didIteratorError = false;
+	    var _iteratorError = undefined;
+	
+	    try {
+	      for (var _iterator = tournaments[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	        var tournament = _step.value;
+	
+	        if (tournament.runnerup === this.props.player.id) {
+	          runnerups.push(tournament.name);
+	        }
+	      }
+	    } catch (err) {
+	      _didIteratorError = true;
+	      _iteratorError = err;
+	    } finally {
+	      try {
+	        if (!_iteratorNormalCompletion && _iterator.return) {
+	          _iterator.return();
+	        }
+	      } finally {
+	        if (_didIteratorError) {
+	          throw _iteratorError;
+	        }
+	      }
+	    }
+	
+	    if (runnerups.length > 0) {
+	      this.setState({ runnerups: runnerups });
+	    }
+	  },
+	
+	  checkTournamentWins: function checkTournamentWins(tournaments) {
+	    console.log("check for winner has been called");
+	    var wins = [];
+	    var _iteratorNormalCompletion2 = true;
+	    var _didIteratorError2 = false;
+	    var _iteratorError2 = undefined;
+	
+	    try {
+	      for (var _iterator2 = tournaments[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+	        var tournament = _step2.value;
+	
+	        if (tournament.winner === this.props.player.id) {
+	          wins.push(tournament.name);
+	        }
+	      }
+	    } catch (err) {
+	      _didIteratorError2 = true;
+	      _iteratorError2 = err;
+	    } finally {
+	      try {
+	        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+	          _iterator2.return();
+	        }
+	      } finally {
+	        if (_didIteratorError2) {
+	          throw _iteratorError2;
+	        }
+	      }
+	    }
+	
+	    if (wins.length > 0) {
+	      this.setState({ wins: wins });
+	    }
+	  },
+	
+	  render: function render() {
+	    console.log("player tournaments", this.state.tournaments);
+	
+	    var wins = " ";
+	    var runnerups = " ";
+	
+	    if (this.state.wins) {
+	      var wins1 = this.state.wins.toString();
+	      wins = wins1.split(',').join(', ');
+	    }
+	
+	    if (this.state.runnerups) {
+	      var runnerups1 = this.state.runnerups.toString();
+	      runnerups = runnerups1.split(',').join(', ');
+	    }
+	
+	    return React.createElement(
+	      "div",
+	      { className: "player-box" },
+	      React.createElement(
+	        "h3",
+	        null,
+	        this.props.player.name
+	      ),
+	      React.createElement(
+	        "h4",
+	        null,
+	        "ATP World Ranking: ",
+	        this.props.player.ranking
+	      ),
+	      React.createElement(
+	        "h4",
+	        null,
+	        "2016 Winner: ",
+	        wins
+	      ),
+	      React.createElement(
+	        "h4",
+	        null,
+	        "2016 Runner-up: ",
+	        runnerups
+	      ),
+	      React.createElement("img", { src: this.props.player.image, id: this.props.player.id })
+	    );
+	  }
+	
+	});
+	
+	module.exports = PlayerDetail;
 
 /***/ }
 /******/ ]);
