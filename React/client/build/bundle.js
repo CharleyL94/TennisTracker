@@ -19793,18 +19793,12 @@
 	    request.send();
 	  },
 	
-	  getPlayers: function getPlayers() {
-	    var list = document.getElementById('player-list');
-	    list.style.display = "block";
+	  setPage: function setPage() {
+	    var players = document.getElementById('player-list');
+	    console.log("players is:", players);
+	    players.classList.toggle('hidden');
 	    var map = document.getElementById('map');
-	    map.style.display = "none";
-	  },
-	
-	  getMap: function getMap() {
-	    var list = document.getElementById('player-list');
-	    list.style.display = "none";
-	    var map = document.getElementById('map');
-	    map.style.display = "block";
+	    map.classList.toggle('hidden');
 	  },
 	
 	  render: function render() {
@@ -19828,12 +19822,12 @@
 	        ),
 	        React.createElement(
 	          'button',
-	          { onClick: this.getPlayers },
+	          { onClick: this.setPage },
 	          'View Players'
 	        ),
 	        React.createElement(
 	          'button',
-	          { onClick: this.getMap },
+	          { onClick: this.setPage },
 	          'View Map'
 	        )
 	      ),
@@ -20024,7 +20018,7 @@
 	
 	  return React.createElement(
 	    'div',
-	    { id: 'player-list' },
+	    { id: 'player-list', className: 'hidden' },
 	    React.createElement(
 	      'ul',
 	      { className: 'custom-counter' },
@@ -20061,6 +20055,8 @@
 	    this.checkTournamentWins(nextProps.tournaments);
 	    this.checkTournamentRunnerUps(nextProps.tournaments);
 	  },
+	
+	  // the below two methods should be refactored into one which you just pass runnerup or win to.
 	
 	  checkTournamentRunnerUps: function checkTournamentRunnerUps(tournaments) {
 	    console.log("check for runner up has been called");

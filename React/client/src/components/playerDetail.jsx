@@ -17,6 +17,8 @@ var PlayerDetail = React.createClass({
     this.checkTournamentRunnerUps(nextProps.tournaments);
   },
 
+// the below two methods should be refactored into one which you just pass runnerup or win to.
+
   checkTournamentRunnerUps: function(tournaments){
     console.log("check for runner up has been called")
     var runnerups = [];

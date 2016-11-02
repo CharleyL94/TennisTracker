@@ -34,20 +34,14 @@ var Container = React.createClass({
     request.send();
   },
 
-  getPlayers: function(){
-    var list = document.getElementById('player-list');
-    list.style.display = "block";
+  setPage: function(){
+    var players = document.getElementById('player-list');
+    console.log("players is:", players)
+    players.classList.toggle('hidden');
     var map = document.getElementById('map');
-    map.style.display = "none";
+    map.classList.toggle('hidden')
   },
 
-
-  getMap: function(){
-    var list = document.getElementById('player-list');
-    list.style.display = "none";
-    var map = document.getElementById('map');
-    map.style.display = "block";
-  },
 
   render: function(){
     if (!this.state.players){
@@ -57,11 +51,11 @@ var Container = React.createClass({
         <div>
           <div id='header'>
           <h1>Ace Tennis Tracker</h1>
-          <button onClick={this.getPlayers}>View Players</button>
-          <button onClick={this.getMap}>View Map</button>
+          <button onClick={this.setPage}>View Players</button>
+          <button onClick={this.setPage}>View Map</button>
           </div>
           <MapBox id='map' tournaments={this.state.tournaments} players={this.state.players}/>
-          <PlayerList tournaments={this.state.tournaments} players={this.state.players}/>
+          <PlayerList  tournaments={this.state.tournaments} players={this.state.players}/>
         </div>
     )
 }
