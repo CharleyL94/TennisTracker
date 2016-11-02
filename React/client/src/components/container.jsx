@@ -41,6 +41,7 @@ var Container = React.createClass({
     map.style.display = "none";
   },
 
+
   getMap: function(){
     var list = document.getElementById('player-list');
     list.style.display = "none";

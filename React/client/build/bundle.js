@@ -20018,7 +20018,7 @@
 	    return React.createElement(
 	      'li',
 	      { key: index },
-	      React.createElement(PlayerDetail, { player: player })
+	      React.createElement(PlayerDetail, { player: player, tournaments: props.tournaments })
 	    );
 	  });
 	
@@ -20039,31 +20039,142 @@
 /* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	var React = __webpack_require__(1);
 	
 	var PlayerDetail = React.createClass({
-	  displayName: 'PlayerDetail',
+	  displayName: "PlayerDetail",
 	
+	
+	  getInitialState: function getInitialState() {
+	    return {
+	      wins: null,
+	      runnerups: null,
+	      tournaments: null
+	    };
+	  },
+	
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    this.setState({ tournaments: nextProps.tournaments });
+	    console.log("player tournaments", this.state.tournaments);
+	    this.checkTournamentWins(nextProps.tournaments);
+	    this.checkTournamentRunnerUps(nextProps.tournaments);
+	  },
+	
+	  checkTournamentRunnerUps: function checkTournamentRunnerUps(tournaments) {
+	    console.log("check for runner up has been called");
+	    var runnerups = [];
+	    var _iteratorNormalCompletion = true;
+	    var _didIteratorError = false;
+	    var _iteratorError = undefined;
+	
+	    try {
+	      for (var _iterator = tournaments[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	        var tournament = _step.value;
+	
+	        if (tournament.runnerup === this.props.player.id) {
+	          runnerups.push(tournament.name);
+	        }
+	      }
+	    } catch (err) {
+	      _didIteratorError = true;
+	      _iteratorError = err;
+	    } finally {
+	      try {
+	        if (!_iteratorNormalCompletion && _iterator.return) {
+	          _iterator.return();
+	        }
+	      } finally {
+	        if (_didIteratorError) {
+	          throw _iteratorError;
+	        }
+	      }
+	    }
+	
+	    if (runnerups.length > 0) {
+	      this.setState({ runnerups: runnerups });
+	    }
+	  },
+	
+	  checkTournamentWins: function checkTournamentWins(tournaments) {
+	    console.log("check for winner has been called");
+	    var wins = [];
+	    var _iteratorNormalCompletion2 = true;
+	    var _didIteratorError2 = false;
+	    var _iteratorError2 = undefined;
+	
+	    try {
+	      for (var _iterator2 = tournaments[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+	        var tournament = _step2.value;
+	
+	        if (tournament.winner === this.props.player.id) {
+	          wins.push(tournament.name);
+	        }
+	      }
+	    } catch (err) {
+	      _didIteratorError2 = true;
+	      _iteratorError2 = err;
+	    } finally {
+	      try {
+	        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+	          _iterator2.return();
+	        }
+	      } finally {
+	        if (_didIteratorError2) {
+	          throw _iteratorError2;
+	        }
+	      }
+	    }
+	
+	    if (wins.length > 0) {
+	      this.setState({ wins: wins });
+	    }
+	  },
 	
 	  render: function render() {
+	    console.log("player tournaments", this.state.tournaments);
+	
+	    var wins = " ";
+	    var runnerups = " ";
+	
+	    if (this.state.wins) {
+	      var wins1 = this.state.wins.toString();
+	      wins = wins1.split(',').join(', ');
+	    }
+	
+	    if (this.state.runnerups) {
+	      var runnerups1 = this.state.runnerups.toString();
+	      runnerups = runnerups1.split(',').join(', ');
+	    }
 	
 	    return React.createElement(
-	      'div',
-	      null,
+	      "div",
+	      { className: "player-box" },
 	      React.createElement(
-	        'h3',
+	        "h3",
 	        null,
 	        this.props.player.name
 	      ),
 	      React.createElement(
-	        'h4',
+	        "h4",
 	        null,
-	        'ATP World Ranking: ',
+	        "ATP World Ranking: ",
 	        this.props.player.ranking
 	      ),
-	      React.createElement('img', { src: this.props.player.image, id: this.props.player.id })
+	      React.createElement(
+	        "h4",
+	        null,
+	        "2016 Winner: ",
+	        wins
+	      ),
+	      React.createElement(
+	        "h4",
+	        null,
+	        "2016 Runner-up: ",
+	        runnerups
+	      ),
+	      React.createElement("img", { src: this.props.player.image, id: this.props.player.id })
 	    );
 	  }
 	

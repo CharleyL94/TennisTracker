@@ -7,7 +7,7 @@ var PlayerList = function( props ) {
     console.log("player ", player)
     return (
       <li key={index}>
-        <PlayerDetail player={player}/>
+        <PlayerDetail player={player} tournaments={props.tournaments}/>
       </li>
     )
   })
