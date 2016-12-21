@@ -1,1 +1,1 @@
-Do we need to have models for tournament and player? So we can have methods to easily get player by id? Rather than writing that in the
+
